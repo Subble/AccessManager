@@ -13,10 +13,10 @@ namespace AccessManager
         public SemVersion Version
             => new SemVersion(0, 1, 0);
 
-        public long LoadPriority => 5;
+        public long LoadPriority => 6;
 
         public IEnumerable<Dependency> Dependencies
-            => new List<Dependency> {
+            => new[] {
                 new Dependency(typeof(IConfigManager), (0,1,0))
             };
 
